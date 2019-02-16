@@ -7,6 +7,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
@@ -56,11 +57,12 @@
             <Label layoutX="229.0" layoutY="116.0" prefHeight="17.0" prefWidth="166.0" text="Podaj miasto" />
             <Label />
             <TextField fx:id="city" layoutX="209.0" layoutY="152.0" />
-            <Button fx:id="search" onAction="#setCity" layoutX="418.0" layoutY="152.0" mnemonicParsing="false" text="Pobierz" />
+            <Button fx:id="search" layoutX="418.0" layoutY="152.0" mnemonicParsing="false" onAction="#setCity" text="Pobierz" />
             <Label fx:id="temp" layoutX="106.0" layoutY="196.0" prefHeight="17.0" prefWidth="69.0" text="Temperatura" />
             <Label fx:id="feelTemp" layoutX="106.0" layoutY="240.0" text="Temperatura odczuwalna" />
             <Label fx:id="realResult" layoutX="404.0" layoutY="205.0" text="0.0 Celsjusza" />
             <Label fx:id="feelResult" layoutX="404.0" layoutY="240.0" text="0.0 Celsjusza" />
+            <ImageView fx:id="weatherImage" fitHeight="95.0" fitWidth="92.0" layoutX="274.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true" />
       </children>
     </AnchorPane>
   </children>
